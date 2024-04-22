@@ -1,0 +1,144 @@
+﻿<UserControl x:Class="CarSharing.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CarSharing.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+
+            <TextBlock Text="Главная"
+                   Foreground="Black"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+
+            <StackPanel Orientation="Horizontal"
+                    Margin="0,0,0,10">
+                <Border Width="400"
+                    Height="200">
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#5bc3ff" Offset="0.0"/>
+                            <GradientStop Color="#3aa0ff" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <Border.Clip>
+                        <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                    </Border.Clip>
+
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="Новые автомобили&#x0a;Добавленные в сервис"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   Margin="20,10,10,0"/>
+
+                            <TextBlock Text="Информация о автомобилях"
+                                   Foreground="White"
+                                   FontSize="18"
+                                   Margin="20,10,90,0"/>
+                        </StackPanel>
+
+                    </Grid>
+
+                </Border>
+
+                <Border Width="200"
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="45,0,0,0">
+
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                            <GradientStop Color="#63bfb1" Offset="0.0"/>
+                            <GradientStop Color="#579ab3" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <TextBlock Text="Напоминаем о&#x0a;необходимости&#x0a;работать с БД&#x0a;с особой&#x0a; Осторожностью "
+                                   Foreground="White"
+                                   FontSize="23"
+                                   Margin="10,10,10,10"/>
+
+                </Border>
+            </StackPanel>
+
+            <StackPanel>
+
+                <StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="15,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>
+
+                <TextBlock Text="Информация по категориям"
+                   Foreground="Black"
+                   FontSize="20"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+
+                <StackPanel Orientation="Horizontal">
+
+                    <Border Width="150"
+                        Height="150"
+                        Background="#844eff"
+                        CornerRadius="10"
+                        Margin="0">
+
+                        <TextBlock Text="Электромобили&#x0a;Новые в нашем парке&#x0a;&#x0a;Добавлены&#x0a; Москвич-3 Электро и&#x0a;  Zeekr"
+                               Foreground="White"
+                               FontSize="13"
+                               Margin="5,5,5,5"/>
+
+                    </Border>
+
+                    <Border Width="150"
+                        Height="150"
+                        Background="#4e99ff"
+                        CornerRadius="10">
+
+                        <TextBlock Text="Комфорт&#x0a;Новые в нашем парке&#x0a;&#x0a;Добавлен&#x0a; Jac JS6"
+                               Foreground="White"
+                               FontSize="13"
+                               Margin="5,5,5,5"/>
+
+                    </Border>
+
+                    <Border Width="150"
+                        Height="150"
+                        Background="#5ed3e0"
+                        CornerRadius="10">
+
+                        <TextBlock Text="Эконом&#x0a;Новые в нашем парке&#x0a;&#x0a;Добавлен&#x0a; Changan Alsvin"
+                               Foreground="White"
+                               FontSize="13"
+                               Margin="5,5,5,5"/>
+
+                    </Border>
+
+                    <Border Width="150"
+                        Height="150"
+                        Background="#46ab95"
+                        CornerRadius="10">
+
+                        <TextBlock Text="Сложные случаи для&#x0a;специалистов:&#x0a;+7(999) 832-32-54&#x0a;+7(993) 903-03-82"
+                               Foreground="White"
+                               FontSize="13"
+                               Margin="5,5,5,5"/>
+
+                    </Border>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
