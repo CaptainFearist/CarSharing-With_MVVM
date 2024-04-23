@@ -5,9 +5,116 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CarSharing.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             Background="Black">
-    <Grid>
-            
-    </Grid>
+             d:DesignHeight="950" d:DesignWidth="800"
+             Background="#77b5ac">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel>
+            <TextBlock Text="Электромобили"
+                       Foreground="Black"
+                       FontSize="18"
+                       HorizontalAlignment="Left"
+                       Margin="10,10,0,0"/>
+
+            <StackPanel Orientation="Horizontal">
+
+                <Border Width="240" Height="240"
+                        HorizontalAlignment="Left"
+                        Margin="10,10,10,10">
+
+                    <Grid>
+                        <Image Source="/Images/vw_id4.png" Stretch="UniformToFill"
+                               Height="110"
+                               VerticalAlignment="Top"
+                               Margin="0,10,2,0">
+                            <Image.OpacityMask>
+                                <ImageBrush ImageSource="/Images/vw_id4.png"/>
+                            </Image.OpacityMask>
+                        </Image>
+
+                        <TextBlock Text="VW.ID4 Пробег 12300км" 
+                                   VerticalAlignment="Bottom" 
+                                   Background="#6aa199" 
+                                   Foreground="White"
+                                   Padding="5"/>
+
+                    </Grid>
+
+                </Border>
+
+                <Border Width="240" Height="240">
+
+                </Border>
+
+                <Border Width="240" Height="240"
+                        Margin="10,10,10,10">
+
+                </Border>
+            </StackPanel>
+
+            <StackPanel>
+
+                <!--<StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="15,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>-->
+
+                <TextBlock Text="Комфорт"
+                           FontSize="18"
+                           HorizontalAlignment="Left"
+                           Margin="10,10,0,10"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="240" Height="240"
+                        HorizontalAlignment="Left"
+                        Margin="10,10,10,10">
+
+                    </Border>
+
+                    <Border Width="240" Height="240">
+
+                    </Border>
+
+                    <Border Width="240" Height="240"
+                            Margin="10,10,10,10">
+
+                    </Border>
+                </StackPanel>
+
+            </StackPanel>
+
+            <StackPanel>
+
+                <!--<StackPanel.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="Margin" Value="15,0,0,0"/>
+                    </Style>
+                </StackPanel.Resources>-->
+
+                <TextBlock Text="Эконом"
+                           FontSize="18"
+                           HorizontalAlignment="Left"
+                           Margin="10,10,10,10"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="240" Height="240"
+                        HorizontalAlignment="Left"
+                        Margin="10,10,10,10">
+
+                    </Border>
+
+                    <Border Width="240" Height="240">
+
+                    </Border>
+
+                    <Border Width="240" Height="240"
+                        Margin="10,10,10,10">
+
+                    </Border>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+    </ScrollViewer>
 </UserControl>

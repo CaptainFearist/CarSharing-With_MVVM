@@ -9,7 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\vw_id4.png" />
+    <None Remove="MVVM\View\vw_id4.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="MVVM\Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\vw_id4.png" />
+    <Resource Include="MVVM\View\vw_id4.png" />
   </ItemGroup>
 
 </Project>
